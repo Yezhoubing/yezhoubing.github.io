@@ -12,7 +12,7 @@
     
     
     
-    <title>Hello World | Bolg</title>
+    <title>html和css规范 | Bolg</title>
     <link href="https://www.bilibili.com" rel="prefetch" />
 
     
@@ -198,19 +198,26 @@
         <i class="fa fa-home"></i>
         <a href="https://www.bilibili.com">Bolg</a>
         >
-        <span>Hello World</span>
+        <span>html和css规范</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2022/02/03/hello-world/">Hello World</a>
+                <a href="/2022/03/27/html%E5%92%8Ccss%E8%A7%84%E8%8C%83/">html和css规范</a>
             </h1>
         </div>
         <div class="tag-article">
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2022-02-03
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/html%E3%80%81css/">html、css</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2022-03-27
             </span>
             
         </div>
@@ -220,32 +227,57 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2022/02/03/hello-world/">Hello World</a>
+                    <a href="/2022/03/27/html%E5%92%8Ccss%E8%A7%84%E8%8C%83/">html和css规范</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2022-02-03
+                <i class="fa fa-calendar"></i> 2022-03-27
             </p>
             <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/html%E3%80%81css/">html、css</a>
+                
                 
                 
             </p>
         </center>
     </div>
     <div class="content-article">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="html与css的一些规范问题"><a href="#html与css的一些规范问题" class="headerlink" title="html与css的一些规范问题"></a>html与css的一些规范问题</h1><h2 id="1-命名问题"><a href="#1-命名问题" class="headerlink" title="1.命名问题"></a>1.命名问题</h2><p>不要用字母大小写，即驼峰命名法；尽量使用小写字母与数字，用下划线连接</p>
+<h2 id="2-url结构"><a href="#2-url结构" class="headerlink" title="2.url结构"></a>2.url结构</h2><p>协议+主机+端口 +路径+资源</p>
+<p>eg:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://lbs.tianditu.gov.cn/server/MapService.html</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="3-协议"><a href="#3-协议" class="headerlink" title="3.协议"></a>3.协议</h2><p>比如</p>
+<table>
+<thead>
+<tr>
+<th>http://</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>https://</td>
+<td>具有保密协议，比上一个安全</td>
+</tr>
+<tr>
+<td>ftp://</td>
+<td>通常用于文件上传或下载</td>
+</tr>
+</tbody></table>
+<h2 id="4-注释"><a href="#4-注释" class="headerlink" title="4.注释"></a>4.注释</h2><p>给一个块添加注释</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--这是开始 START--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;map&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--这是结束 END--&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="5-块"><a href="#5-块" class="headerlink" title="5.块"></a>5.块</h2><p>meta对于搜索引擎</p>
+<p>第一条是搜索引擎如果搜索你content中的关键词，你的网页会有机会出现在搜索结果上；第二条是搜索结果标题下的描述</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;关键词1、关键词2&quot;</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;关键词1、关键词2&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
 
     </div>
 </article>
@@ -393,17 +425,17 @@
 
                 
                 <li>
-                    <a href="/2022/02/03/hello-world/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2022/03/27/html%E5%92%8Ccss%E8%A7%84%E8%8C%83/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2022/02/03/hello-world/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2022/03/27/html%E5%92%8Ccss%E8%A7%84%E8%8C%83/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2022/02/03/hello-world/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2022/03/27/html%E5%92%8Ccss%E8%A7%84%E8%8C%83/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -411,11 +443,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 19.109545434977907px;" class="tag-cloud-link">机器学习、lstm</a>
+    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 15.370492861058143px;" class="tag-cloud-link">机器学习、lstm</a>
     
-    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 12.912548464165036px;" class="tag-cloud-link">测试</a>
+    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 12.925634716591574px;" class="tag-cloud-link">测试</a>
     
-    <a href="/tags/html%E3%80%81css/" style="font-size: 13.85152431444963px;" class="tag-cloud-link">html、css</a>
+    <a href="/tags/html%E3%80%81css/" style="font-size: 18.867707363920918px;" class="tag-cloud-link">html、css</a>
     
 </div>
                 
