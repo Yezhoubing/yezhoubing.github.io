@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: test | Bolg</title>
+    <title>scrapy中response | Bolg</title>
     <link href="https://www.bilibili.com" rel="prefetch" />
 
     
@@ -200,19 +200,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://www.bilibili.com">Bolg</a>
         >
-        <span>标签</span>
+        <span>scrapy中response</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/test/index.html">test</a>
+                <a href="/2022/06/15/scrapy%E4%B8%ADresponse/">scrapy中response</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/scrapy/">scrapy</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2022-06-15
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -220,21 +235,54 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/test/index.html">test</a>
+                    <a href="/2022/06/15/scrapy%E4%B8%ADresponse/">scrapy中response</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2022-06-15
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/scrapy/">scrapy</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2022/04/01/%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/">多个标签测试</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <p>parse()方法的参数 response 是start_urls里面的链接爬取后的结果。所以在parse()方法中，我们可以直接对response对象包含的内容进行解析，比如浏览请求结果的网页源代码，或者进一步分析源代码内容，或者找出结果中的链接而得到下一个请求</p>
+<h2 id="一-response属性"><a href="#一-response属性" class="headerlink" title="一.response属性"></a>一.response属性</h2><p>url ：HTTP响应的url地址,str类型</p>
+<p>status：HTTP响应的状态码, int类型</p>
+<p>headers ：HTTP响应的头部, 类字典类型, 可以调用get或者getlist方法对其进行访问</p>
+<p>body：HTTP响应正文, bytes类型</p>
+<p>text：文本形式的HTTP响应正文, str类型</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.text = response.body.decode(response.encoding)</span><br></pre></td></tr></table></figure>
+<p>encoding：HTTP响应正文的编码</p>
+<p>reqeust：产生该HTTP响应的Reqeust对象</p>
+<p>meta：即response.request.meta, 在构造Request对象时, 可将要传递给响应处理函数的信息通过meta参数传入, 响应处理函数处理响应时, 通过response.meta将信息提取出来</p>
+<p>selector：Selector对象用于在Response中提取数据使用下面详细将,主要是 xpath,css取值之后的处理</p>
+<p>xpath(query)：下面详细讲解</p>
+<p>css(query) ：下面详细讲解</p>
+<p>urljoin(url) ：用于构造绝对url, 当传入的url参数是一个相对地址时, 根据response.url计算出相应的绝对url.</p>
+<h2 id="二-Selector对象"><a href="#二-Selector对象" class="headerlink" title="二.Selector对象"></a>二.Selector对象</h2><p>Selector 对象和SelectorList对象都有以下几种方法。</p>
+<p>extract() 返回选中内容的Unicode字符串</p>
+<p>extract_first()(SelectorList独有)</p>
+<p>返回列表中的第一个元素内容</p>
+<p>re(“正则表达式”) 正则提取</p>
+<p>re_first()(SelectorList独有)</p>
+<p>返回列表中的第一个元素内容</p>
+<h2 id="三-CSS"><a href="#三-CSS" class="headerlink" title="三.CSS"></a>三.CSS</h2><p>response.css(‘css选择器’)   返回值是Selector对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">response.css(&#x27;css选择器&#x27;).extract_first()   #获取一个</span><br><span class="line"></span><br><span class="line">response.css(&#x27;css选择器&#x27;).extract()  # 获取全部</span><br><span class="line"></span><br><span class="line">response.css(&#x27;css选择器::attr(属性名)&#x27;).extract()  # 获取其中某个属性</span><br><span class="line"></span><br><span class="line">(response.css(&#x27;css选择器::text&#x27;).extract()  #获取标签里的文本</span><br></pre></td></tr></table></figure>
+
+<h2 id="四-xpath"><a href="#四-xpath" class="headerlink" title="四.xpath"></a>四.xpath</h2><p>response.xpath(‘xpath选择器’)   返回值是Selector对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">response.xpath(&#x27;xpath选择器&#x27;).extract_first()   #获取一个</span><br><span class="line"></span><br><span class="line">response.xpath(&#x27;xpath选择器&#x27;).extract()  # 获取全部</span><br><span class="line"></span><br><span class="line">.//a[contains(@class,&quot;link-title&quot;)/text()]  # 获取文本</span><br><span class="line"></span><br><span class="line">.//a[contains(@class,&quot;link-title&quot;)/@href]   #获取属性</span><br></pre></td></tr></table></figure>
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -368,7 +416,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/02/04/keras/">keras</a>
+                    <a href="/2022/02/03/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/03/27/html%E5%92%8Ccss%E8%A7%84%E8%8C%83/">html和css规范</a>
                 </span>
             </li>
             
@@ -380,31 +434,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/02/03/test/">test</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2022/04/01/%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/">多个标签测试</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2022/04/29/word/">三线表</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/05/29/%E7%9B%AE%E5%BD%95%E9%97%AE%E9%A2%98/">目录问题</a>
+                    <a href="/2022/04/29/mathtype%E5%AF%B9%E8%A1%8C%E9%97%B4%E8%B7%9D%E5%BD%B1%E5%93%8D/">mathtype对行间距影响</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/05/29/%E4%B8%89%E7%BA%BF%E8%A1%A8/">三线表</a>
+                    <a href="/2022/05/29/%E7%9B%AE%E5%BD%95%E9%97%AE%E9%A2%98/">目录问题</a>
                 </span>
             </li>
             
@@ -426,6 +468,12 @@
                 </span>
             </li>
             
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95/">scrapy模拟登录</a>
+                </span>
+            </li>
+            
         </ul>
     </div>
 </aside>
@@ -437,17 +485,17 @@
 
                 
                 <li>
-                    <a href="/tags/test/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2022/06/15/scrapy%E4%B8%ADresponse/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/test/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2022/06/15/scrapy%E4%B8%ADresponse/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/test/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2022/06/15/scrapy%E4%B8%ADresponse/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -455,19 +503,19 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/html%E3%80%81css/" style="font-size: 19.50514117512496px;" class="tag-cloud-link">html、css</a>
+    <a href="/tags/html%E3%80%81css/" style="font-size: 16.57697918653136px;" class="tag-cloud-link">html、css</a>
     
-    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 18.287955200085207px;" class="tag-cloud-link">机器学习、lstm</a>
+    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 10.542181270250405px;" class="tag-cloud-link">机器学习、lstm</a>
     
-    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 17.34731232398771px;" class="tag-cloud-link">测试</a>
+    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 8.110005631690886px;" class="tag-cloud-link">测试</a>
     
-    <a href="/tags/test/" style="font-size: 13.883915969677002px;" class="tag-cloud-link">test</a>
+    <a href="/tags/test/" style="font-size: 18.03289921441546px;" class="tag-cloud-link">test</a>
     
-    <a href="/tags/word/" style="font-size: 16.122005118051476px;" class="tag-cloud-link">word</a>
+    <a href="/tags/word/" style="font-size: 18.999877177342263px;" class="tag-cloud-link">word</a>
     
-    <a href="/tags/mathtype/" style="font-size: 15.63260905121583px;" class="tag-cloud-link">mathtype</a>
+    <a href="/tags/mathtype/" style="font-size: 17.026147015233143px;" class="tag-cloud-link">mathtype</a>
     
-    <a href="/tags/scrapy/" style="font-size: 13.046441638213697px;" class="tag-cloud-link">scrapy</a>
+    <a href="/tags/scrapy/" style="font-size: 11.396156383663982px;" class="tag-cloud-link">scrapy</a>
     
 </div>
                 

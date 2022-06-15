@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: test | Bolg</title>
+    <title>scrapy使用selenium | Bolg</title>
     <link href="https://www.bilibili.com" rel="prefetch" />
 
     
@@ -200,19 +200,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://www.bilibili.com">Bolg</a>
         >
-        <span>标签</span>
+        <span>scrapy使用selenium</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/test/index.html">test</a>
+                <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/">scrapy使用selenium</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/scrapy/">scrapy</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2022-06-15
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -220,21 +235,34 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/test/index.html">test</a>
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/">scrapy使用selenium</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2022-06-15
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/scrapy/">scrapy</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2022/04/01/%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/">多个标签测试</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <p>在爬虫文件中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def __init__(self):</span><br><span class="line">       self.bro = Chrome() # 默认路径为python.exe所在文件夹</span><br></pre></td></tr></table></figure>
+<p>中间件文件,在类中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def process_response(self, request, response, spider): #spider便是爬虫文件中的类</span><br><span class="line">    bro = spider.bro # 获取爬虫文件中定义的浏览器对象</span><br><span class="line">    new_url = spider.start_urls[0]  # 需要的url</span><br><span class="line">    bro.get(new_url)</span><br><span class="line">    time.sleep(3)</span><br><span class="line">    page_text = bro.page_source # 包含动态加载的数据</span><br><span class="line">    new_response = HtmlResponse(url=new_url,body=page_text,encoding=&#x27;utf-8&#x27;,request=request)</span><br><span class="line">    return new_response</span><br></pre></td></tr></table></figure>
+<p>在setting中开启中间件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">DOWNLOADER_MIDDLEWARES = &#123;</span><br><span class="line">   &#x27;servant_pic.middlewares.ServantPicDownloaderMiddleware&#x27;: 543,</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -368,7 +396,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/02/04/keras/">keras</a>
+                    <a href="/2022/02/03/hello-world/">Hello World</a>
                 </span>
             </li>
             
@@ -380,25 +408,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/02/03/test/">test</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2022/04/01/%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E6%B5%8B%E8%AF%95/">多个标签测试</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2022/04/29/word/">三线表</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2022/05/29/%E7%9B%AE%E5%BD%95%E9%97%AE%E9%A2%98/">目录问题</a>
+                    <a href="/2022/05/29/%E9%A2%98%E6%B3%A8%E8%BE%93%E5%85%A5%E6%A1%86%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8/">题注输入框显示不全</a>
                 </span>
             </li>
             
@@ -416,6 +432,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/">scrapy使用selenium</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2022/06/15/scrapy%E5%BC%82%E6%AD%A5%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87/">scrapy异步下载图片</a>
                 </span>
             </li>
@@ -423,6 +445,12 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2022/06/15/scrapy%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8/">scrapy初步使用</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95/">scrapy模拟登录</a>
                 </span>
             </li>
             
@@ -437,17 +465,17 @@
 
                 
                 <li>
-                    <a href="/tags/test/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/test/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/test/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -455,19 +483,19 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/html%E3%80%81css/" style="font-size: 19.50514117512496px;" class="tag-cloud-link">html、css</a>
+    <a href="/tags/html%E3%80%81css/" style="font-size: 11.75990850992019px;" class="tag-cloud-link">html、css</a>
     
-    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 18.287955200085207px;" class="tag-cloud-link">机器学习、lstm</a>
+    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 19.643181285652748px;" class="tag-cloud-link">机器学习、lstm</a>
     
-    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 17.34731232398771px;" class="tag-cloud-link">测试</a>
+    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 16.13044646279203px;" class="tag-cloud-link">测试</a>
     
-    <a href="/tags/test/" style="font-size: 13.883915969677002px;" class="tag-cloud-link">test</a>
+    <a href="/tags/test/" style="font-size: 14.45023040031114px;" class="tag-cloud-link">test</a>
     
-    <a href="/tags/word/" style="font-size: 16.122005118051476px;" class="tag-cloud-link">word</a>
+    <a href="/tags/word/" style="font-size: 18.31992145304725px;" class="tag-cloud-link">word</a>
     
-    <a href="/tags/mathtype/" style="font-size: 15.63260905121583px;" class="tag-cloud-link">mathtype</a>
+    <a href="/tags/mathtype/" style="font-size: 14.600903295296325px;" class="tag-cloud-link">mathtype</a>
     
-    <a href="/tags/scrapy/" style="font-size: 13.046441638213697px;" class="tag-cloud-link">scrapy</a>
+    <a href="/tags/scrapy/" style="font-size: 19.758383271082206px;" class="tag-cloud-link">scrapy</a>
     
 </div>
                 
