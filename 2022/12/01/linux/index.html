@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Ye Zhoubing">
+    
+    <meta name="description" content="新人做的博客">
+    
+    
+    
+    
+    
+    
+    <title>linux | Blog</title>
+    <link href="https://www.bilibili.com" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/https:/s2.loli.net/2022/12/03/rQ91dVzMcH7lFEf.jpg'
+        var previews = 'https://s2.loli.net/2022/12/03/Y2Ima4fdWPBjeht.jpg,https://s2.loli.net/2022/12/03/8TRXnAENirCLfxg.jpg,https://s2.loli.net/2022/12/03/LD5hVtQHiRmu32l.jpg,https://s2.loli.net/2022/12/03/i1gTdhRp3KjF6eJ.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://www.bilibili.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Blog</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E5%8A%9E%E5%85%AC/">办公</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/">机器学习、lstm</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/Linux/">Linux</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/linux/">linux</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://www.bilibili.com">Blog</a>
+        >
+        <span>linux</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2022/12/01/linux/">linux</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Linux/">Linux</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2022-12-01
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2022/12/01/linux/">linux</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2022-12-01
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Linux/">Linux</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h1 id="命令行界面的-与"><a href="#命令行界面的-与" class="headerlink" title="命令行界面的#与$"></a>命令行界面的#与$</h1><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>#</td>
+<td>代表root管理员权限</td>
+</tr>
+<tr>
+<td>$</td>
+<td>代表普通用户</td>
+</tr>
+</tbody></table>
+<h1 id="linux命令大全"><a href="#linux命令大全" class="headerlink" title="linux命令大全"></a>linux命令大全</h1><h2 id="一、登录与注销"><a href="#一、登录与注销" class="headerlink" title="一、登录与注销"></a>一、登录与注销</h2><pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1)	sudo useradd lilei  //添加用户 (不能被立即使用，需设置密码     sudo passwd lilei)  </span><br><span class="line">2)	sudo adduser lilei  //添加用户</span><br><span class="line">su root   切换为root用户</span><br><span class="line">3)	login  //登录或切换用户</span><br><span class="line">4)	logout //注销用户（命令行）  exit(shell-退出控制台)</span><br><span class="line">5)	shutdown -h 10  //10分钟后自动关机	shutdown -c  //取消</span><br><span class="line">6)	halt(root用户)  //关闭所有进程后自动关机</span><br><span class="line">7)	poweroff //同上</span><br><span class="line">8)	shutdown -r 10 //十分钟后自动重启</span><br><span class="line">9)	init 6  //重启 （0-停机，1-单用户，2-多用户，3-完全多用户，4-图形化，5-安全模式，6-重启）</span><br><span class="line">10)	reboot  //重启</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="二、目录与文件"><a href="#二、目录与文件" class="headerlink" title="二、目录与文件"></a>二、目录与文件</h2><h5 id="注：路径要用-不要用"><a href="#注：路径要用-不要用" class="headerlink" title="注：路径要用&#x2F;,不要用\"></a>注：路径要用&#x2F;,不要用\</h5><p>.&#x2F;表示当前目录，.&#x2F; 一般需要和其他文件夹或者文件结合使用，指代当前目录下的东西。执行文件程序时需要.&#x2F;,因为该程序不在环境变量中。<br>目录绝对路径是以 &#x2F; 开头的，&#x2F; 表示根目录。<br>若想要进入当前目录的下一级某个目录，可以使用 cd 跟上相对路径,这里以切换至 usr 目录为例：<br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd usr/</span><br><span class="line">或</span><br><span class="line">cd ./usr</span><br></pre></td></tr></table></figure><br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">    1)	pwd   //显示当前工作目录</span><br><span class="line">    2)	mkdir mydir  //创建工作目录</span><br><span class="line">    3)	cd mydir  //更改工作目录</span><br><span class="line">        cd ..     //转到上层目录</span><br><span class="line">        ~    表示home</span><br><span class="line">        cd ~    跳到自己的home目录</span><br><span class="line">    4)	rmdir mydir //删除工作目录</span><br><span class="line">    5)	touch myfile  //创建文件</span><br><span class="line">    6)	mv myfile mydir  //移动目录或文件</span><br><span class="line">    7)	cp myfile myfir  //复制目录或文件</span><br><span class="line">    8)	rm -rf mydir  //删除目录或文件</span><br><span class="line">    9)	ls -l myfile  //查看文件最后被编辑时间</span><br><span class="line">    10)	ls -lu myfile //查看文件最后被访问时间</span><br><span class="line">    11)	touch -at 01011212 myfile  //修改文件最后被访问时间</span><br><span class="line">    12)	ls //列出所有文件和目录</span><br><span class="line">    13)	ls -a //查看所有文件</span><br><span class="line">    14)	ls -i //显示文件索引节点号</span><br><span class="line">    15)	ls -l //详细显示</span><br><span class="line">    16)	ls -m //以逗号分隔</span><br><span class="line">    17)	sudo apt-get install tree </span><br><span class="line">    18)	tree -l//以树状图列出目录内容</span><br><span class="line">    19)	tree -a //所有</span><br><span class="line">    20)	tree -i //不以阶梯状</span><br><span class="line">    21)	tree -s  //列出文件或目录大小</span><br><span class="line">    22)	tree -t  //按更改时间</span><br><span class="line">    23)	file -b myfile  //显示目录或文件的详细信息</span><br><span class="line">    24)	stat myfile  //同上</span><br><span class="line"></span><br><span class="line">## 三、文件内容显示</span><br><span class="line"></span><br><span class="line">    1)	cat &gt; myfile  //创建文件并编辑内容（ctrl+D结束编辑）</span><br><span class="line">    2)	cat -n myfile  //查看文件</span><br><span class="line">    3)	chmod [u/g/o/a][+/-/=][r/w/x] myfile  //更改文件权限</span><br><span class="line">    u-user,g-group,o-others,a-all  .   +-添加,--删除,=-重置   .</span><br><span class="line">    r-read读（4），w-write写（2），x-execute执行（1）</span><br><span class="line">    4)	more myfile  //分页往后显示文件（Space空格）</span><br><span class="line">    5)	less myfile  //分页自由显示文件（Page Down / Page Up）</span><br><span class="line">    6)	head (-10) myfile  //指定显示文件前若干行（默认前10）</span><br><span class="line">    7)	tail (-10) myfile  //指定显示文件后若干行（默认后10）</span><br><span class="line"></span><br><span class="line">## 四、文件内容处理</span><br><span class="line"></span><br><span class="line">    1)	sort myfile  //对文件内容进行排序</span><br><span class="line">    2)	sort -r myfile  //逆序</span><br><span class="line">    3)	uniq myfile  //检查文件中的重复内容</span><br><span class="line">    4)	grep （-c）‘a’ myfile  //在文件中查找指定内容 (显示行号)</span><br><span class="line">    5)	diff myfile01 myfile02  //对不同文件进行比较</span><br><span class="line">    6)	diff3 myfile01 myfile02 myfile03  //三个文件</span><br><span class="line">    7)	sdiff myfile01 myfile02  //合并</span><br><span class="line">    8)	cmp myfile01 myfile02  //通过字节对不同文件进行比较</span><br><span class="line">    9)	comm myfile01 myfile02  //对有序文件进行比较</span><br><span class="line">    10)	cut -b(-c)(-d) 2(3) myfile  //对文件内容进行剪切</span><br><span class="line">    11)	paste myfile02 myfile01 //对文件内容进行粘贴 02-）01</span><br><span class="line">    12)	wc （-参数） myfile  //对文件内容进行统计 （c-字符数,w-单词数,l-行数）</span><br><span class="line"></span><br><span class="line">## 五、压缩</span><br><span class="line"></span><br><span class="line">    1)	zip myfile.zip myfile  //压缩</span><br><span class="line">    2)	zip -d myfile.zip myfile  //添加</span><br><span class="line">    3)	zip -m myfile.zip myfile  //删除</span><br><span class="line">    4)	unzip -o myfile.zip  //解压（覆盖）</span><br><span class="line">    5)	unzip -n myfile.zip  //解压（不覆盖）</span><br><span class="line">    6)	zipinfo myfile.zip  //列出压缩文件信息</span><br><span class="line"></span><br><span class="line">## 六、获取帮助</span><br><span class="line"></span><br><span class="line">    1)	man ls  //获取帮助</span><br><span class="line">    2)	man -k ls  //不清楚完整名字</span><br><span class="line">    3)	whatis ls  //获取帮助</span><br><span class="line">    4)	help cd  / cd –help  //获取帮助 -d(简短描述) -s(用法简介)</span><br><span class="line">    5)	info who  //获取帮助</span><br><span class="line"></span><br><span class="line">## 七、其他命令</span><br><span class="line"></span><br><span class="line">    1)	clear  //清除屏幕信息</span><br><span class="line">    2)	echo xx  //显示文本  x=0  echo $x . echo -e \$x . echo $(pwd)</span><br><span class="line">    3)	date  //显示日期和时间（+%y 年  +%m 月  +%d日）</span><br><span class="line">    4)	cal  //显示当前日期  cal -y</span><br><span class="line">    5)	ps  //查看当前进程  -A(所有)  U  lilei (用户lilei)</span><br><span class="line">    6)	kill -9 2315  //终止某一进程  </span><br><span class="line">    7)	ps -ef | grep Jincheng</span><br><span class="line">    8)	pkill Jincheng</span><br><span class="line">    9)	killall Jincheng</span><br><span class="line">    10)	last  //显示最近登录系统的用户信息-6列</span><br><span class="line">    11)	history （10） //显示历史指令-默认1000行</span><br><span class="line">        w    //查看用户，当登陆系统用户很多的时候，可以在W后面加上某个用户名，则会查看该用户执行任务的情况</span><br><span class="line">        web  //查看当前登陆到系统的用户及其他信息</span><br><span class="line">    12)	sudo adduser lilei sudo  //给普通用户赋予root权限</span><br><span class="line">    13)	sudo usermod -G sudo lilei  //同上</span><br><span class="line">    14)	alias l=’ls’  //定义命令别名</span><br><span class="line">    15)	unalias l  //删除别名</span><br><span class="line">    16)	alias  //列出别名</span><br><span class="line"></span><br><span class="line">## 八、查看修改文件内容</span><br></pre></td></tr></table></figure></p>
+<h1 id="STEP-1-打开文件"><a href="#STEP-1-打开文件" class="headerlink" title="STEP 1: 打开文件"></a>STEP 1: 打开文件</h1><p>vi &#x2F;home&#x2F;test&#x2F;method.R ##打开路径“&#x2F;home&#x2F;test&#x2F;”的名称为“method”类型为“.R”的文件，按PgUp或PgDn或箭头查看</p>
+<h1 id="STEP-2-输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改"><a href="#STEP-2-输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改" class="headerlink" title="STEP 2: 输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改"></a>STEP 2: 输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改</h1><h1 id="STEP-3-修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的-，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。"><a href="#STEP-3-修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的-，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。" class="headerlink" title="STEP 3: 修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的:，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。"></a>STEP 3: 修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的:，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 九、命令行终端快速退出</span><br><span class="line">有三种方式</span><br><span class="line">### 1.点击❌号</span><br><span class="line"></span><br><span class="line">### 2.输入exit</span><br><span class="line"></span><br><span class="line">### 3.ctrl+d</span><br><span class="line"></span><br><span class="line">## 十、source命令</span><br><span class="line">Linux Source命令及脚本的执行方式解析</span><br><span class="line"></span><br><span class="line">当我修改了/etc/profile文件，我想让它立刻生效，而不用重新登录；这时就想到用source命令，如:source /etc/profile</span><br><span class="line">对source进行了学习，并且用它与sh 执行脚本进行了对比，现在总结一下。</span><br><span class="line"></span><br><span class="line">source命令：</span><br><span class="line"></span><br><span class="line">source命令也称为“点命令”，也就是一个点符号（.）,是bash的内部命令。</span><br><span class="line"></span><br><span class="line">功能：使Shell读入指定的Shell程序文件并依次执行文件中的所有语句</span><br><span class="line">source命令通常用于重新执行刚修改的初始化文件，使之立即生效，而不必注销并重新登录。</span><br><span class="line"></span><br><span class="line">用法：</span><br></pre></td></tr></table></figure>
+<p>source filename 或 . filename<br>source命令(从 C Shell 而来)是bash shell的内置命令;点命令(.)，就是个点符号(从Bourne Shell而来)是source的另一名称。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">source filename 与 sh filename 及./filename执行脚本的区别在那里呢？</span><br><span class="line"></span><br><span class="line">1.当shell脚本具有可执行权限时，用sh filename与./filename执行脚本是没有区别得。./filename是因为当前目录没有在PATH中，所有”.”是用来表示当前目录的。</span><br><span class="line">2.sh filename 重新建立一个子shell，在子shell中执行脚本里面的语句，该子shell继承父shell的环境变量，但子shell新建的、改变的变量不会被带回父shell，除非使用export。</span><br><span class="line">3.source filename：这个命令其实只是简单地读取脚本里面的语句依次在当前shell里面执行，没有建立新的子shell。那么脚本里面所有新建、改变变量的语句都会保存在当前shell里面。</span><br><span class="line"></span><br><span class="line">### 举例说明：</span><br><span class="line"></span><br><span class="line">1.新建一个test.sh脚本，内容为:A=1</span><br><span class="line"></span><br><span class="line">2.然后使其可执行chmod +x test.sh</span><br><span class="line"></span><br><span class="line">3.运行sh test.sh后，echo $A，显示为空，因为A=1并未传回给当前shell</span><br><span class="line"></span><br><span class="line">4.运行./test.sh后，也是一样的效果</span><br><span class="line"></span><br><span class="line">5.运行source test.sh 或者 . test.sh，然后echo $A，则会显示1，说明A=1的变量在当前shell中</span><br><span class="line"></span><br><span class="line">### source激活环境</span><br><span class="line">用`source activate env_name`激活环境与`conda activate env_name`不同</span><br><span class="line">source activate 可以在shell脚本开头处激活虚拟环境，而用conda activate则提示“CommandNotFoundError: Your shell has not been properly configured to use ‘conda activate’.”错误。这点很重要，因为经常需要在脚本中先激活特定的环境，然后在特定环境中执行python脚本。观察下列实例，假设test.sh的代码如下：</span><br></pre></td></tr></table></figure>
+<p>#! &#x2F;bin&#x2F;bash<br>source activate python3.6</p>
+<pre><code>命令 sh -c “source activate python3.6” 不会对当前shell环境产生影响，因为sh会开启一个子shell，然后在子shell中激活了环境python3.6，然后结束命令退出子shell。
+
+命令 sh -c &quot;conda activate python3.6&quot; 相当于在shell脚本开始处，激活环境,可能会报错，解决办法如下面这篇文章
+[解决方案文章](https://blog.csdn.net/weixin_44815943/article/details/109353439)
+</code></pre>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Ye Zhoubing
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="https://s2.loli.net/2022/12/03/rQ91dVzMcH7lFEf.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>新人做的博客</p>
+</p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/07/17/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/01/02/%E5%A4%9A%E6%A0%87%E7%AD%BE/">多标签</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/12/12/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81ip/">配置静态ip</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/12/06/linux%E4%B8%8B%E7%BF%BB%E5%A2%99/">linux下翻墙</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/12/01/linux/">linux</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8/">scrapy初步使用</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E4%B8%ADresponse/">scrapy中response</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95/">scrapy模拟登录</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/">scrapy使用selenium</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E5%BC%82%E6%AD%A5%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87/">scrapy异步下载图片</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/07/17/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/12/06/linux%E4%B8%8B%E7%BF%BB%E5%A2%99/">linux下翻墙</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/04/29/mathtype%E5%AF%B9%E8%A1%8C%E9%97%B4%E8%B7%9D%E5%BD%B1%E5%93%8D/">mathtype对行间距影响</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E4%B8%ADresponse/">scrapy中response</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E4%BD%BF%E7%94%A8selenium/">scrapy使用selenium</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95/">scrapy模拟登录</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/02/03/test/">test</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/01/02/%E5%A4%9A%E6%A0%87%E7%AD%BE/">多标签</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/05/29/%E9%A2%98%E6%B3%A8%E8%BE%93%E5%85%A5%E6%A1%86%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8/">题注输入框显示不全</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2022/06/15/scrapy%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8/">scrapy初步使用</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2022/12/01/linux/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2022/12/01/linux/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2022/12/01/linux/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/" style="font-size: 14.949177115564641px;" class="tag-cloud-link">机器学习、lstm</a>
+    
+    <a href="/tags/Linux/" style="font-size: 17.478557083924585px;" class="tag-cloud-link">Linux</a>
+    
+    <a href="/tags/linux/" style="font-size: 13.708775265692903px;" class="tag-cloud-link">linux</a>
+    
+    <a href="/tags/mathtype/" style="font-size: 8.718328099799884px;" class="tag-cloud-link">mathtype</a>
+    
+    <a href="/tags/scrapy/" style="font-size: 8.249470404075502px;" class="tag-cloud-link">scrapy</a>
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10.112766961071385px;" class="tag-cloud-link">测试</a>
+    
+    <a href="/tags/word/" style="font-size: 13.763230785888776px;" class="tag-cloud-link">word</a>
+    
+    <a href="/tags/html%E3%80%81css/" style="font-size: 18.49142198372426px;" class="tag-cloud-link">html、css</a>
+    
+    <a href="/tags/tag1/" style="font-size: 9.656338489402295px;" class="tag-cloud-link">tag1</a>
+    
+    <a href="/tags/tag2/" style="font-size: 8.07366131109498px;" class="tag-cloud-link">tag2</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/yezhoubing" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://blog.csdn.net/anyiyzb" target="_blank">CSDN</a>
+    </li>
+    
+    <li>
+        <a href="https://gitee.com/anyi12138" target="_blank">码云</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Ye Zhoubing Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: 'https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+
+</html>
