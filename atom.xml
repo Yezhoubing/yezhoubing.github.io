@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Blog</title>
+  
+  <subtitle>一个简单的博客</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-07-18T02:43:22.029Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Ye Zhoubing</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/post/4a17b156.html"/>
+    <id>http://example.com/post/4a17b156.html</id>
+    <published>2023-07-18T02:41:00.382Z</published>
+    <updated>2023-07-18T02:43:22.029Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客Blog" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2Blog/"/>
+    
+    <category term="hexo" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2Blog/hexo/"/>
+    
+    <category term="new-yilia" scheme="http://example.com/categories/%E5%8D%9A%E5%AE%A2Blog/new-yilia/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="new-yilia" scheme="http://example.com/tags/new-yilia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>math</title>
+    <link href="http://example.com/post/a927044d.html"/>
+    <id>http://example.com/post/a927044d.html</id>
+    <published>2023-07-18T02:41:00.382Z</published>
+    <updated>2023-07-18T02:43:22.033Z</updated>
+    
+    <content type="html"><![CDATA[<p>如 $\lim_{x \to 0} \frac{\sin x}{x}$ 渲染的是</p><p>$$<br>\begin{eqnarray}<br> \lim_{x \to 0} \frac{\sin x + x^2 + x^3}{x} &amp; &#x3D; &amp; \lim_{x \to 0} \frac{\sin x }{x} + \lim_{x \to 0} \frac{x^2 }{x} + \lim_{x \to 0}\frac{x^3}{x}<br>\\ &amp; &#x3D; &amp; \lim_{x \to 0}\frac{\sin x}{x}<br>\\ &amp; &#x3D; &amp; 1<br>\end{eqnarray}<br>$$</p><span id="more"></span><p>斐波那契数列$A_n&#x3D;A_{n-1}+A_{n-2}$,前后两项的比值逐渐收敛到黄金分割比例<br>$$\lim_{n\to \infty}\frac{A_{n-1}}{A_n}&#x3D;\frac{\sqrt{5}-1}{2}.$$</p><p>因式分解<br>$$\begin{split}(x−1)(x−3)&amp;&#x3D;x^2−4x+3 \<br>&amp;&#x3D;x^2−4x+4−1 \<br>&amp;&#x3D;(x−2)^2−1<br>\end{split}<br>$$</p><p>狄利克雷函数</p><p>$$<br>D(x)&#x3D;<br>\begin{cases}<br>1,&amp; x \in Q \<br>0,&amp; x \notin Q<br>\end{cases}<br>$$</p><p>高斯公式<br>$$<br>\iiint_{\Omega}\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}\right) d v&#x3D;\iint_{\Sigma} P d y d z+Q d z d x+R d x d y<br>$$</p><h2 id="物理公式"><a href="#物理公式" class="headerlink" title="物理公式"></a>物理公式</h2><ul><li>牛顿第一定律: $\sum \vec{F}_{i}&#x3D;\frac{\mathrm{d} \vec{v}}{\mathrm{d} t}&#x3D;0$</li><li>牛顿第二定律: $\vec{F}&#x3D;\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \frac{\mathrm{d} \vec{v}}{\mathrm{d} t}&#x3D;\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \vec{a}&#x3D;\frac{\mathrm{d} m}{\mathrm{d} t} \vec{v}+m \frac{\mathrm{d}^{2} \vec{r}}{\mathrm{d} t^{2}}$</li><li>牛顿第三定律: $\overrightarrow{F_{12}}&#x3D;-\overrightarrow{F_{21}}$</li><li>质能守恒: $E&#x3D;mc^2$</li></ul><h2 id="化学公式"><a href="#化学公式" class="headerlink" title="化学公式"></a>化学公式</h2><p>离子反应与沉淀: $\ce{SO4^2- + Ba^2+ -&gt; BaSO4 v}$</p><h2 id="生物公式"><a href="#生物公式" class="headerlink" title="生物公式"></a>生物公式</h2><p>光合作用<br>范德蒙行列式<br>$$D_{n-1}&#x3D;\left|\begin{array}{cccc}<br>1 &amp; 1 &amp; \dots &amp; 1 \<br>x_{2} &amp; x_{3} &amp; \dots &amp; x_{n} \<br>\vdots &amp; \vdots &amp; &amp; \vdots \<br>x_{2}^{n-2} &amp; x_{3}^{n-2} &amp; \dots &amp; x_{n}^{n-2}<br>\end{array}\right|&#x3D;\prod_{2 \leq j&lt;i \leq n}\left(x_{i}-x_{j}\right)$$</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;如 $&#92;lim_{x &#92;to 0} &#92;frac{&#92;sin x}{x}$ 渲染的是&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;&#92;begin{eqnarray}&lt;br&gt; &#92;lim_{x &#92;to 0} &#92;frac{&#92;sin x + x^2 + x^3}{x} &amp;amp; &amp;#x3D; &amp;amp; &#92;lim_{x &#92;to 0} &#92;frac{&#92;sin x }{x} + &#92;lim_{x &#92;to 0} &#92;frac{x^2 }{x} + &#92;lim_{x &#92;to 0}&#92;frac{x^3}{x}&lt;br&gt;&#92;&#92; &amp;amp; &amp;#x3D; &amp;amp; &#92;lim_{x &#92;to 0}&#92;frac{&#92;sin x}{x}&lt;br&gt;&#92;&#92; &amp;amp; &amp;#x3D; &amp;amp; 1&lt;br&gt;&#92;end{eqnarray}&lt;br&gt;$$&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="math" scheme="http://example.com/categories/math/"/>
+    
+    
+    <category term="math" scheme="http://example.com/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多标签</title>
+    <link href="http://example.com/post/a87e638f.html"/>
+    <id>http://example.com/post/a87e638f.html</id>
+    <published>2023-01-02T07:38:53.000Z</published>
+    <updated>2023-07-18T02:56:31.232Z</updated>
+    
+    <content type="html"><![CDATA[<p>多标签测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;多标签测试&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="tag1" scheme="http://example.com/tags/tag1/"/>
+    
+    <category term="tag2" scheme="http://example.com/tags/tag2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置静态IP</title>
+    <link href="http://example.com/post/a20dcfe3.html"/>
+    <id>http://example.com/post/a20dcfe3.html</id>
+    <published>2022-12-12T05:24:14.000Z</published>
+    <updated>2023-07-18T06:43:39.678Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-修改对应系统的配置文件"><a href="#1-修改对应系统的配置文件" class="headerlink" title="1.修改对应系统的配置文件"></a>1.修改对应系统的配置文件</h1><p>在本服务器中，文件路径对应如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">etc/netplan/01-network-manager-all.yaml</span><br></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2022/10/31/VBfnJT3y4p1UKMh.png"></p><h2 id="可能要root权限，命令如下："><a href="#可能要root权限，命令如下：" class="headerlink" title="可能要root权限，命令如下："></a>可能要root权限，命令如下：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br></pre></td></tr></table></figure><p>输入账户密码即可</p><p>输入命令打开文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/netplan/01-network-manager-all.yaml</span><br></pre></td></tr></table></figure><p>编辑文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i</span><br></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2022/10/31/QeZ1PBIipaHnd45.png"><br>文件名看之前ipconfig -a显示ip地址的那个<br><img src="https://s2.loli.net/2022/10/31/ivd4Z6nJHQolSOB.png"></p><h3 id="注意：参数修改有空格"><a href="#注意：参数修改有空格" class="headerlink" title="注意：参数修改有空格"></a>注意：参数修改有空格</h3><p><img src="https://s2.loli.net/2022/10/31/lhQcyOErw8iKDPz.png"><br>保存修改并退出</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:wq</span><br></pre></td></tr></table></figure><p>应用修改的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo netplan apply</span><br></pre></td></tr></table></figure><p>然后输入ifconfig -a就可以查看ip地址是否修改啦</p><p>参考<a href="https://www.codenong.com/p12032836/">博客1</a>、<a href="https://blog.csdn.net/wuyoulv/article/details/81001503">博客2</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-修改对应系统的配置文件&quot;&gt;&lt;a href=&quot;#1-修改对应系统的配置文件&quot; class=&quot;headerlink&quot; title=&quot;1.修改对应系统的配置文件&quot;&gt;&lt;/a&gt;1.修改对应系统的配置文件&lt;/h1&gt;&lt;p&gt;在本服务器中，文件路径对应如下&lt;/p&gt;
+&lt;figur</summary>
+      
+    
+    
+    
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux下翻墙</title>
+    <link href="http://example.com/post/54cb0ae7.html"/>
+    <id>http://example.com/post/54cb0ae7.html</id>
+    <published>2022-12-06T12:55:46.000Z</published>
+    <updated>2023-07-18T02:56:31.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>推荐使用clash客户端，使用步骤如下：</p><h2 id="1-下载clash"><a href="#1-下载clash" class="headerlink" title="1.下载clash"></a>1.下载clash</h2><p>在GitHub上搜索，第一个就是<br><img src="https://s2.loli.net/2022/12/05/9TahJO6n27NRmkA.png" alt="image.png"></p><p><img src="https://s2.loli.net/2022/12/05/rnW1b7M9fuFKIUQ.png" alt="image.png"></p><h5 id="注意版本选择："><a href="#注意版本选择：" class="headerlink" title="注意版本选择："></a>注意版本选择：</h5><p><img src="https://s2.loli.net/2022/12/05/rnW1b7M9fuFKIUQ.png" alt="image.png"></p><h2 id="2-解压"><a href="#2-解压" class="headerlink" title="2.解压"></a>2.解压</h2><p>到下载的<code>.tar.gz</code>目录中，输入解压命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf filename</span><br></pre></td></tr></table></figure><p>再转到解压后的文件中，运行cfw文件启动clash</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./cfw</span><br></pre></td></tr></table></figure><h2 id="3-导入节点"><a href="#3-导入节点" class="headerlink" title="3.导入节点"></a>3.导入节点</h2><p>自己之前购买的用自己的就可以，没有的可以访问这个<a href="https://v2rayse.com/">网址</a>获取免费节点<br><img src="https://s2.loli.net/2022/12/05/ioYdhJzEfHg5IZ1.png" alt="image.png"></p><h2 id="4-修改端口"><a href="#4-修改端口" class="headerlink" title="4.修改端口"></a>4.修改端口</h2><p>在setting中，修改network-network proxy，点击设置图标，对应的端口改为clash中显示的端口<br><img src="https://s2.loli.net/2022/12/05/V4TKLYRfhUvymqc.png" alt="image.png"></p><p><img src="https://s2.loli.net/2022/12/05/zyeG3VMfU8QoTLE.png" alt="image.png"><br>然后就能科学上网啦。<br>参考<a href="https://www.youtube.com/watch?v=pTlso8m_iRk">视频</a></p><h4 id="别用最新版的，新版调了vmess协议的适配格式。用0-19-2以前的版本"><a href="#别用最新版的，新版调了vmess协议的适配格式。用0-19-2以前的版本" class="headerlink" title="别用最新版的，新版调了vmess协议的适配格式。用0.19.2以前的版本"></a>别用最新版的，新版调了vmess协议的适配格式。用0.19.2以前的版本</h4><h3 id="终端上翻墙"><a href="#终端上翻墙" class="headerlink" title="终端上翻墙"></a>终端上翻墙</h3><p>注意按照上面的步骤的话可以翻墙，但是在终端（命令行）还是没有翻墙，可以输入以下命令查看终端是否翻墙成功。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -i google.com</span><br></pre></td></tr></table></figure><p>在当前终端下翻墙，在终端输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 都是跟之前对应的</span><br><span class="line">export http_proxy=http://127.0.0.1:7890</span><br><span class="line">export https_proxy=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>在关闭终端后就会失效，打开新的终端就需要重新配置。<br>成功后就是这样的：<br><img src="https://s2.loli.net/2022/12/06/PaCzcsNIUbp3Qn4.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;推荐使用clash客户端，使用步骤如下：&lt;/p&gt;
+&lt;h2 id=&quot;1-下载clash&quot;&gt;&lt;a href=&quot;#1-下载clash&quot; class=&quot;headerlink&quot; title=&quot;1.下载clash&quot;&gt;&lt;/a&gt;1.下载clash&lt;/h2&gt;&lt;p&gt;在GitHub上搜索，第一个</summary>
+      
+    
+    
+    
+    
+    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux</title>
+    <link href="http://example.com/post/9211474f.html"/>
+    <id>http://example.com/post/9211474f.html</id>
+    <published>2022-12-01T07:53:19.000Z</published>
+    <updated>2023-07-18T02:56:31.217Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="命令行界面的-与"><a href="#命令行界面的-与" class="headerlink" title="命令行界面的#与$"></a>命令行界面的#与$</h1><table><thead><tr><th>符号</th><th>意义</th></tr></thead><tbody><tr><td>#</td><td>代表root管理员权限</td></tr><tr><td>$</td><td>代表普通用户</td></tr></tbody></table><h1 id="linux命令大全"><a href="#linux命令大全" class="headerlink" title="linux命令大全"></a>linux命令大全</h1><h2 id="一、登录与注销"><a href="#一、登录与注销" class="headerlink" title="一、登录与注销"></a>一、登录与注销</h2><pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1)sudo useradd lilei  //添加用户 (不能被立即使用，需设置密码     sudo passwd lilei)  </span><br><span class="line">2)sudo adduser lilei  //添加用户</span><br><span class="line">su root   切换为root用户</span><br><span class="line">3)login  //登录或切换用户</span><br><span class="line">4)logout //注销用户（命令行）  exit(shell-退出控制台)</span><br><span class="line">5)shutdown -h 10  //10分钟后自动关机shutdown -c  //取消</span><br><span class="line">6)halt(root用户)  //关闭所有进程后自动关机</span><br><span class="line">7)poweroff //同上</span><br><span class="line">8)shutdown -r 10 //十分钟后自动重启</span><br><span class="line">9)init 6  //重启 （0-停机，1-单用户，2-多用户，3-完全多用户，4-图形化，5-安全模式，6-重启）</span><br><span class="line">10)reboot  //重启</span><br></pre></td></tr></table></figure></code></pre><h2 id="二、目录与文件"><a href="#二、目录与文件" class="headerlink" title="二、目录与文件"></a>二、目录与文件</h2><h5 id="注：路径要用-不要用"><a href="#注：路径要用-不要用" class="headerlink" title="注：路径要用&#x2F;,不要用\"></a>注：路径要用&#x2F;,不要用\</h5><p>.&#x2F;表示当前目录，.&#x2F; 一般需要和其他文件夹或者文件结合使用，指代当前目录下的东西。执行文件程序时需要.&#x2F;,因为该程序不在环境变量中。<br>目录绝对路径是以 &#x2F; 开头的，&#x2F; 表示根目录。<br>若想要进入当前目录的下一级某个目录，可以使用 cd 跟上相对路径,这里以切换至 usr 目录为例：<br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd usr/</span><br><span class="line">或</span><br><span class="line">cd ./usr</span><br></pre></td></tr></table></figure><br>    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">    1)pwd   //显示当前工作目录</span><br><span class="line">    2)mkdir mydir  //创建工作目录</span><br><span class="line">    3)cd mydir  //更改工作目录</span><br><span class="line">        cd ..     //转到上层目录</span><br><span class="line">        ~    表示home</span><br><span class="line">        cd ~    跳到自己的home目录</span><br><span class="line">    4)rmdir mydir //删除工作目录</span><br><span class="line">    5)touch myfile  //创建文件</span><br><span class="line">    6)mv myfile mydir  //移动目录或文件</span><br><span class="line">    7)cp myfile myfir  //复制目录或文件</span><br><span class="line">    8)rm -rf mydir  //删除目录或文件</span><br><span class="line">    9)ls -l myfile  //查看文件最后被编辑时间</span><br><span class="line">    10)ls -lu myfile //查看文件最后被访问时间</span><br><span class="line">    11)touch -at 01011212 myfile  //修改文件最后被访问时间</span><br><span class="line">    12)ls //列出所有文件和目录</span><br><span class="line">    13)ls -a //查看所有文件</span><br><span class="line">    14)ls -i //显示文件索引节点号</span><br><span class="line">    15)ls -l //详细显示</span><br><span class="line">    16)ls -m //以逗号分隔</span><br><span class="line">    17)sudo apt-get install tree </span><br><span class="line">    18)tree -l//以树状图列出目录内容</span><br><span class="line">    19)tree -a //所有</span><br><span class="line">    20)tree -i //不以阶梯状</span><br><span class="line">    21)tree -s  //列出文件或目录大小</span><br><span class="line">    22)tree -t  //按更改时间</span><br><span class="line">    23)file -b myfile  //显示目录或文件的详细信息</span><br><span class="line">    24)stat myfile  //同上</span><br><span class="line"></span><br><span class="line">## 三、文件内容显示</span><br><span class="line"></span><br><span class="line">    1)cat &gt; myfile  //创建文件并编辑内容（ctrl+D结束编辑）</span><br><span class="line">    2)cat -n myfile  //查看文件</span><br><span class="line">    3)chmod [u/g/o/a][+/-/=][r/w/x] myfile  //更改文件权限</span><br><span class="line">    u-user,g-group,o-others,a-all  .   +-添加,--删除,=-重置   .</span><br><span class="line">    r-read读（4），w-write写（2），x-execute执行（1）</span><br><span class="line">    4)more myfile  //分页往后显示文件（Space空格）</span><br><span class="line">    5)less myfile  //分页自由显示文件（Page Down / Page Up）</span><br><span class="line">    6)head (-10) myfile  //指定显示文件前若干行（默认前10）</span><br><span class="line">    7)tail (-10) myfile  //指定显示文件后若干行（默认后10）</span><br><span class="line"></span><br><span class="line">## 四、文件内容处理</span><br><span class="line"></span><br><span class="line">    1)sort myfile  //对文件内容进行排序</span><br><span class="line">    2)sort -r myfile  //逆序</span><br><span class="line">    3)uniq myfile  //检查文件中的重复内容</span><br><span class="line">    4)grep （-c）‘a’ myfile  //在文件中查找指定内容 (显示行号)</span><br><span class="line">    5)diff myfile01 myfile02  //对不同文件进行比较</span><br><span class="line">    6)diff3 myfile01 myfile02 myfile03  //三个文件</span><br><span class="line">    7)sdiff myfile01 myfile02  //合并</span><br><span class="line">    8)cmp myfile01 myfile02  //通过字节对不同文件进行比较</span><br><span class="line">    9)comm myfile01 myfile02  //对有序文件进行比较</span><br><span class="line">    10)cut -b(-c)(-d) 2(3) myfile  //对文件内容进行剪切</span><br><span class="line">    11)paste myfile02 myfile01 //对文件内容进行粘贴 02-）01</span><br><span class="line">    12)wc （-参数） myfile  //对文件内容进行统计 （c-字符数,w-单词数,l-行数）</span><br><span class="line"></span><br><span class="line">## 五、压缩</span><br><span class="line"></span><br><span class="line">    1)zip myfile.zip myfile  //压缩</span><br><span class="line">    2)zip -d myfile.zip myfile  //添加</span><br><span class="line">    3)zip -m myfile.zip myfile  //删除</span><br><span class="line">    4)unzip -o myfile.zip  //解压（覆盖）</span><br><span class="line">    5)unzip -n myfile.zip  //解压（不覆盖）</span><br><span class="line">    6)zipinfo myfile.zip  //列出压缩文件信息</span><br><span class="line"></span><br><span class="line">## 六、获取帮助</span><br><span class="line"></span><br><span class="line">    1)man ls  //获取帮助</span><br><span class="line">    2)man -k ls  //不清楚完整名字</span><br><span class="line">    3)whatis ls  //获取帮助</span><br><span class="line">    4)help cd  / cd –help  //获取帮助 -d(简短描述) -s(用法简介)</span><br><span class="line">    5)info who  //获取帮助</span><br><span class="line"></span><br><span class="line">## 七、其他命令</span><br><span class="line"></span><br><span class="line">    1)clear  //清除屏幕信息</span><br><span class="line">    2)echo xx  //显示文本  x=0  echo $x . echo -e \$x . echo $(pwd)</span><br><span class="line">    3)date  //显示日期和时间（+%y 年  +%m 月  +%d日）</span><br><span class="line">    4)cal  //显示当前日期  cal -y</span><br><span class="line">    5)ps  //查看当前进程  -A(所有)  U  lilei (用户lilei)</span><br><span class="line">    6)kill -9 2315  //终止某一进程  </span><br><span class="line">    7)ps -ef | grep Jincheng</span><br><span class="line">    8)pkill Jincheng</span><br><span class="line">    9)killall Jincheng</span><br><span class="line">    10)last  //显示最近登录系统的用户信息-6列</span><br><span class="line">    11)history （10） //显示历史指令-默认1000行</span><br><span class="line">        w    //查看用户，当登陆系统用户很多的时候，可以在W后面加上某个用户名，则会查看该用户执行任务的情况</span><br><span class="line">        web  //查看当前登陆到系统的用户及其他信息</span><br><span class="line">    12)sudo adduser lilei sudo  //给普通用户赋予root权限</span><br><span class="line">    13)sudo usermod -G sudo lilei  //同上</span><br><span class="line">    14)alias l=’ls’  //定义命令别名</span><br><span class="line">    15)unalias l  //删除别名</span><br><span class="line">    16)alias  //列出别名</span><br><span class="line"></span><br><span class="line">## 八、查看修改文件内容</span><br></pre></td></tr></table></figure></p><h1 id="STEP-1-打开文件"><a href="#STEP-1-打开文件" class="headerlink" title="STEP 1: 打开文件"></a>STEP 1: 打开文件</h1><p>vi &#x2F;home&#x2F;test&#x2F;method.R ##打开路径“&#x2F;home&#x2F;test&#x2F;”的名称为“method”类型为“.R”的文件，按PgUp或PgDn或箭头查看</p><h1 id="STEP-2-输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改"><a href="#STEP-2-输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改" class="headerlink" title="STEP 2: 输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改"></a>STEP 2: 输入“i”，进入“插入”状态，然后利用方向键定位需要修改的位置，对文档进行修改</h1><h1 id="STEP-3-修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的-，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。"><a href="#STEP-3-修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的-，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。" class="headerlink" title="STEP 3: 修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的:，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。"></a>STEP 3: 修改完成之后，按“ESC”退出“插入”状态，然后输入冒号，英文状态的:，然后输入小写的“wq”保存并退出，输入小写的“q”会直接退出不进行修改保存。</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 九、命令行终端快速退出</span><br><span class="line">有三种方式</span><br><span class="line">### 1.点击❌号</span><br><span class="line"></span><br><span class="line">### 2.输入exit</span><br><span class="line"></span><br><span class="line">### 3.ctrl+d</span><br><span class="line"></span><br><span class="line">## 十、source命令</span><br><span class="line">Linux Source命令及脚本的执行方式解析</span><br><span class="line"></span><br><span class="line">当我修改了/etc/profile文件，我想让它立刻生效，而不用重新登录；这时就想到用source命令，如:source /etc/profile</span><br><span class="line">对source进行了学习，并且用它与sh 执行脚本进行了对比，现在总结一下。</span><br><span class="line"></span><br><span class="line">source命令：</span><br><span class="line"></span><br><span class="line">source命令也称为“点命令”，也就是一个点符号（.）,是bash的内部命令。</span><br><span class="line"></span><br><span class="line">功能：使Shell读入指定的Shell程序文件并依次执行文件中的所有语句</span><br><span class="line">source命令通常用于重新执行刚修改的初始化文件，使之立即生效，而不必注销并重新登录。</span><br><span class="line"></span><br><span class="line">用法：</span><br></pre></td></tr></table></figure><p>source filename 或 . filename<br>source命令(从 C Shell 而来)是bash shell的内置命令;点命令(.)，就是个点符号(从Bourne Shell而来)是source的另一名称。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">source filename 与 sh filename 及./filename执行脚本的区别在那里呢？</span><br><span class="line"></span><br><span class="line">1.当shell脚本具有可执行权限时，用sh filename与./filename执行脚本是没有区别得。./filename是因为当前目录没有在PATH中，所有”.”是用来表示当前目录的。</span><br><span class="line">2.sh filename 重新建立一个子shell，在子shell中执行脚本里面的语句，该子shell继承父shell的环境变量，但子shell新建的、改变的变量不会被带回父shell，除非使用export。</span><br><span class="line">3.source filename：这个命令其实只是简单地读取脚本里面的语句依次在当前shell里面执行，没有建立新的子shell。那么脚本里面所有新建、改变变量的语句都会保存在当前shell里面。</span><br><span class="line"></span><br><span class="line">### 举例说明：</span><br><span class="line"></span><br><span class="line">1.新建一个test.sh脚本，内容为:A=1</span><br><span class="line"></span><br><span class="line">2.然后使其可执行chmod +x test.sh</span><br><span class="line"></span><br><span class="line">3.运行sh test.sh后，echo $A，显示为空，因为A=1并未传回给当前shell</span><br><span class="line"></span><br><span class="line">4.运行./test.sh后，也是一样的效果</span><br><span class="line"></span><br><span class="line">5.运行source test.sh 或者 . test.sh，然后echo $A，则会显示1，说明A=1的变量在当前shell中</span><br><span class="line"></span><br><span class="line">### source激活环境</span><br><span class="line">用`source activate env_name`激活环境与`conda activate env_name`不同</span><br><span class="line">source activate 可以在shell脚本开头处激活虚拟环境，而用conda activate则提示“CommandNotFoundError: Your shell has not been properly configured to use ‘conda activate’.”错误。这点很重要，因为经常需要在脚本中先激活特定的环境，然后在特定环境中执行python脚本。观察下列实例，假设test.sh的代码如下：</span><br></pre></td></tr></table></figure><p>#! &#x2F;bin&#x2F;bash<br>source activate python3.6</p><pre><code>命令 sh -c “source activate python3.6” 不会对当前shell环境产生影响，因为sh会开启一个子shell，然后在子shell中激活了环境python3.6，然后结束命令退出子shell。命令 sh -c &quot;conda activate python3.6&quot; 相当于在shell脚本开始处，激活环境,可能会报错，解决办法如下面这篇文章[解决方案文章](https://blog.csdn.net/weixin_44815943/article/details/109353439)</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;命令行界面的-与&quot;&gt;&lt;a href=&quot;#命令行界面的-与&quot; class=&quot;headerlink&quot; title=&quot;命令行界面的#与$&quot;&gt;&lt;/a&gt;命令行界面的#与$&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;符号&lt;/th&gt;
+&lt;th&gt;意义&lt;/th&gt;
+&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy初步使用</title>
+    <link href="http://example.com/post/152f7b27.html"/>
+    <id>http://example.com/post/152f7b27.html</id>
+    <published>2022-06-15T02:16:35.000Z</published>
+    <updated>2023-07-18T02:56:31.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>parse()方法的参数 response 是start_urls里面的链接爬取后的结果。所以在parse()方法中，我们可以直接对response对象包含的内容进行解析，比如浏览请求结果的网页源代码，或者进一步分析源代码内容，或者找出结果中的链接而得到下一个请求</p><h2 id="一-response属性"><a href="#一-response属性" class="headerlink" title="一.response属性"></a>一.response属性</h2><p>url ：HTTP响应的url地址,str类型</p><p>status：HTTP响应的状态码, int类型</p><p>headers ：HTTP响应的头部, 类字典类型, 可以调用get或者getlist方法对其进行访问</p><p>body：HTTP响应正文, bytes类型</p><p>text：文本形式的HTTP响应正文, str类型</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.text = response.body.decode(response.encoding)</span><br></pre></td></tr></table></figure><p>encoding：HTTP响应正文的编码</p><p>reqeust：产生该HTTP响应的Reqeust对象</p><p>meta：即response.request.meta, 在构造Request对象时, 可将要传递给响应处理函数的信息通过meta参数传入, 响应处理函数处理响应时, 通过response.meta将信息提取出来</p><p>selector：Selector对象用于在Response中提取数据使用下面详细将,主要是 xpath,css取值之后的处理</p><p>xpath(query)：下面详细讲解</p><p>css(query) ：下面详细讲解</p><p>urljoin(url) ：用于构造绝对url, 当传入的url参数是一个相对地址时, 根据response.url计算出相应的绝对url.</p><h2 id="二-Selector对象"><a href="#二-Selector对象" class="headerlink" title="二.Selector对象"></a>二.Selector对象</h2><p>Selector 对象和SelectorList对象都有以下几种方法。</p><p>extract() 返回选中内容的Unicode字符串</p><p>extract_first()(SelectorList独有)</p><p>返回列表中的第一个元素内容</p><p>re(“正则表达式”) 正则提取</p><p>re_first()(SelectorList独有)</p><p>返回列表中的第一个元素内容</p><h2 id="三-CSS"><a href="#三-CSS" class="headerlink" title="三.CSS"></a>三.CSS</h2><p>response.css(‘css选择器’)   返回值是Selector对象</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">response.css(<span class="string">&#x27;css选择器&#x27;</span>).extract_first()   <span class="comment">#获取一个</span></span><br><span class="line"></span><br><span class="line">response.css(<span class="string">&#x27;css选择器&#x27;</span>).extract()  <span class="comment"># 获取全部</span></span><br><span class="line"></span><br><span class="line">response.css(<span class="string">&#x27;css选择器::attr(属性名)&#x27;</span>).extract()  <span class="comment"># 获取其中某个属性</span></span><br><span class="line"></span><br><span class="line">(response.css(<span class="string">&#x27;css选择器::text&#x27;</span>).extract()  <span class="comment">#获取标签里的文本</span></span><br></pre></td></tr></table></figure><h2 id="四-xpath"><a href="#四-xpath" class="headerlink" title="四.xpath"></a>四.xpath</h2><p>response.xpath(‘xpath选择器’)   返回值是Selector对象</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">response.xpath(<span class="string">&#x27;xpath选择器&#x27;</span>).extract_first()   <span class="comment">#获取一个</span></span><br><span class="line"></span><br><span class="line">response.xpath(<span class="string">&#x27;xpath选择器&#x27;</span>).extract()  <span class="comment"># 获取全部</span></span><br><span class="line"></span><br><span class="line">.//a[contains(@<span class="keyword">class</span>,<span class="string">&quot;link-title&quot;</span>)/text()]  <span class="comment"># 获取文本</span></span><br><span class="line"></span><br><span class="line">.//a[contains(@<span class="keyword">class</span>,<span class="string">&quot;link-title&quot;</span>)/@href]   <span class="comment">#获取属性</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;parse()方法的参数 response 是start_urls里面的链接爬取后的结果。所以在parse()方法中，我们可以直接对response对象包含的内容进行解析，比如浏览请求结果的网页源代码，或者进一步分析源代码内容，或者找出结果中的链接而得到下一个请求&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://example.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="scrapy" scheme="http://example.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy中response</title>
+    <link href="http://example.com/post/1628357d.html"/>
+    <id>http://example.com/post/1628357d.html</id>
+    <published>2022-06-15T02:15:13.000Z</published>
+    <updated>2023-07-18T02:56:31.219Z</updated>
+    
+    <content type="html"><![CDATA[<p>parse()方法的参数 response 是start_urls里面的链接爬取后的结果。所以在parse()方法中，我们可以直接对response对象包含的内容进行解析，比如浏览请求结果的网页源代码，或者进一步分析源代码内容，或者找出结果中的链接而得到下一个请求</p><h2 id="一-response属性"><a href="#一-response属性" class="headerlink" title="一.response属性"></a>一.response属性</h2><p>url ：HTTP响应的url地址,str类型</p><p>status：HTTP响应的状态码, int类型</p><p>headers ：HTTP响应的头部, 类字典类型, 可以调用get或者getlist方法对其进行访问</p><p>body：HTTP响应正文, bytes类型</p><p>text：文本形式的HTTP响应正文, str类型</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.text = response.body.decode(response.encoding)</span><br></pre></td></tr></table></figure><p>encoding：HTTP响应正文的编码</p><p>reqeust：产生该HTTP响应的Reqeust对象</p><p>meta：即response.request.meta, 在构造Request对象时, 可将要传递给响应处理函数的信息通过meta参数传入, 响应处理函数处理响应时, 通过response.meta将信息提取出来</p><p>selector：Selector对象用于在Response中提取数据使用下面详细将,主要是 xpath,css取值之后的处理</p><p>xpath(query)：下面详细讲解</p><p>css(query) ：下面详细讲解</p><p>urljoin(url) ：用于构造绝对url, 当传入的url参数是一个相对地址时, 根据response.url计算出相应的绝对url.</p><h2 id="二-Selector对象"><a href="#二-Selector对象" class="headerlink" title="二.Selector对象"></a>二.Selector对象</h2><p>Selector 对象和SelectorList对象都有以下几种方法。</p><p>extract() 返回选中内容的Unicode字符串</p><p>extract_first()(SelectorList独有)</p><p>返回列表中的第一个元素内容</p><p>re(“正则表达式”) 正则提取</p><p>re_first()(SelectorList独有)</p><p>返回列表中的第一个元素内容</p><h2 id="三-CSS"><a href="#三-CSS" class="headerlink" title="三.CSS"></a>三.CSS</h2><p>response.css(‘css选择器’)   返回值是Selector对象</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">response.css(<span class="string">&#x27;css选择器&#x27;</span>).extract_first()   <span class="comment">#获取一个</span></span><br><span class="line"></span><br><span class="line">response.css(<span class="string">&#x27;css选择器&#x27;</span>).extract()  <span class="comment"># 获取全部</span></span><br><span class="line"></span><br><span class="line">response.css(<span class="string">&#x27;css选择器::attr(属性名)&#x27;</span>).extract()  <span class="comment"># 获取其中某个属性</span></span><br><span class="line"></span><br><span class="line">(response.css(<span class="string">&#x27;css选择器::text&#x27;</span>).extract()  <span class="comment">#获取标签里的文本</span></span><br></pre></td></tr></table></figure><h2 id="四-xpath"><a href="#四-xpath" class="headerlink" title="四.xpath"></a>四.xpath</h2><p>response.xpath(‘xpath选择器’)   返回值是Selector对象</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">response.xpath(<span class="string">&#x27;xpath选择器&#x27;</span>).extract_first()   <span class="comment">#获取一个</span></span><br><span class="line"></span><br><span class="line">response.xpath(<span class="string">&#x27;xpath选择器&#x27;</span>).extract()  <span class="comment"># 获取全部</span></span><br><span class="line"></span><br><span class="line">.//a[contains(@<span class="keyword">class</span>,<span class="string">&quot;link-title&quot;</span>)/text()]  <span class="comment"># 获取文本</span></span><br><span class="line"></span><br><span class="line">.//a[contains(@<span class="keyword">class</span>,<span class="string">&quot;link-title&quot;</span>)/@href]   <span class="comment">#获取属性</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;parse()方法的参数 response 是start_urls里面的链接爬取后的结果。所以在parse()方法中，我们可以直接对response对象包含的内容进行解析，比如浏览请求结果的网页源代码，或者进一步分析源代码内容，或者找出结果中的链接而得到下一个请求&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://example.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="scrapy" scheme="http://example.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy模拟登录</title>
+    <link href="http://example.com/post/87f5bed2.html"/>
+    <id>http://example.com/post/87f5bed2.html</id>
+    <published>2022-06-15T02:13:58.000Z</published>
+    <updated>2023-07-18T02:56:31.226Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LoginSpider</span>(scrapy.Spider):</span><br><span class="line">    name = <span class="string">&#x27;login&#x27;</span></span><br><span class="line">    start_urls = [<span class="string">&#x27;https://github.com/login&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">self, response</span>):</span><br><span class="line">        ever_token = response.xpath(<span class="string">&#x27;//*[@id=&quot;login&quot;]/div[4]/form/input[1]/@value&#x27;</span>).extract_first()</span><br><span class="line">        timestamp_secret = response.xpath(<span class="string">&#x27;//*[@id=&quot;login&quot;]/div[4]/form/div/input[11]/@value&#x27;</span>).extract_first()</span><br><span class="line">        timestamp = response.xpath(<span class="string">&#x27;//*[@id=&quot;login&quot;]/div[4]/form/div/input[10]/@value&#x27;</span>).extract_first()</span><br><span class="line"></span><br><span class="line">        data = &#123;</span><br><span class="line">            <span class="string">&quot;commit&quot;</span>: <span class="string">&quot;Sign in&quot;</span>,</span><br><span class="line">            <span class="string">&quot;authenticity_token&quot;</span>: ever_token, <span class="comment"># token每次都会变,可以在login网页中查找到</span></span><br><span class="line">            <span class="string">&quot;login&quot;</span>: <span class="string">&quot;xxx&quot;</span>, <span class="comment"># 填成自己的</span></span><br><span class="line">            <span class="string">&quot;password&quot;</span>: <span class="string">&quot;xxx&quot;</span>, <span class="comment"># 填成自己的</span></span><br><span class="line">            <span class="string">&quot;webauthn-support&quot;</span>: <span class="string">&quot;supported&quot;</span>,</span><br><span class="line">            <span class="string">&quot;webauthn-iuvpaa-support&quot;</span>: <span class="string">&quot;unsupported&quot;</span>,</span><br><span class="line">            <span class="string">&quot;return_to&quot;</span>: <span class="string">&quot;https://github.com/login&quot;</span>,</span><br><span class="line">            <span class="string">&quot;timestamp&quot;</span>: timestamp,</span><br><span class="line">            <span class="string">&quot;timestamp_secret&quot;</span>: timestamp_secret</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">yield</span> scrapy.FormRequest(  <span class="comment"># 用的就是post方式</span></span><br><span class="line">            url=<span class="string">&#x27;https://github.com/session&#x27;</span>, <span class="comment"># post网址</span></span><br><span class="line">            callback=self.after_login,</span><br><span class="line">            formdata=data</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">after_login</span>(<span class="params">self, response</span>):</span><br><span class="line">        <span class="keyword">yield</span> scrapy.Request(<span class="string">&#x27;https://github.com/yezhoubing&#x27;</span>, callback=self.check_login)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">check_login</span>(<span class="params">self, response</span>):</span><br><span class="line">        <span class="built_in">print</span>(response.xpath(<span class="string">&#x27;html/head/title/text()&#x27;</span>).extract_first())</span><br></pre></td></tr></table></figure><p>用scrapy.FormRequest（）方法发送post请求</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span clas</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://example.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="scrapy" scheme="http://example.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy使用selenium</title>
+    <link href="http://example.com/post/71a79112.html"/>
+    <id>http://example.com/post/71a79112.html</id>
+    <published>2022-06-15T02:12:41.000Z</published>
+    <updated>2023-07-18T02:56:31.222Z</updated>
+    
+    <content type="html"><![CDATA[<p>在爬虫文件中</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">       self.bro = Chrome() <span class="comment"># 默认路径为python.exe所在文件夹</span></span><br></pre></td></tr></table></figure><p>中间件文件,在类中</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">process_response</span>(<span class="params">self, request, response, spider</span>): <span class="comment">#spider便是爬虫文件中的类</span></span><br><span class="line">    bro = spider.bro <span class="comment"># 获取爬虫文件中定义的浏览器对象</span></span><br><span class="line">    new_url = spider.start_urls[<span class="number">0</span>]  <span class="comment"># 需要的url</span></span><br><span class="line">    bro.get(new_url)</span><br><span class="line">    time.sleep(<span class="number">3</span>)</span><br><span class="line">    page_text = bro.page_source <span class="comment"># 包含动态加载的数据</span></span><br><span class="line">    new_response = HtmlResponse(url=new_url,body=page_text,encoding=<span class="string">&#x27;utf-8&#x27;</span>,request=request)</span><br><span class="line">    <span class="keyword">return</span> new_response</span><br></pre></td></tr></table></figure><p>在setting中开启中间件</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">DOWNLOADER_MIDDLEWARES = &#123;</span><br><span class="line">   <span class="string">&#x27;servant_pic.middlewares.ServantPicDownloaderMiddleware&#x27;</span>: <span class="number">543</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在爬虫文件中&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://example.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="scrapy" scheme="http://example.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy异步下载图片</title>
+    <link href="http://example.com/post/d1099314.html"/>
+    <id>http://example.com/post/d1099314.html</id>
+    <published>2022-06-15T02:08:54.000Z</published>
+    <updated>2023-07-18T02:56:31.225Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="scrapy异步下载图片"><a href="#scrapy异步下载图片" class="headerlink" title="scrapy异步下载图片"></a>scrapy异步下载图片</h1><p>通过 from scrapy.pipelines.images import ImagesPipeline管道下载，可以考虑自己重写，从而修改默认的方式</p><h2 id="爬虫文件"><a href="#爬虫文件" class="headerlink" title="爬虫文件"></a>爬虫文件</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;scrapy异步下载图片&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver <span class="keyword">import</span> Chrome</span><br><span class="line"><span class="keyword">from</span> ..items <span class="keyword">import</span> ServantPicItem</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scrapy.pipelines.images <span class="keyword">import</span> ImagesPipeline</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ServantSpider</span>(scrapy.Spider):</span><br><span class="line">    name_list = []</span><br><span class="line">    img_list = []</span><br><span class="line">    name = <span class="string">&#x27;servant&#x27;</span></span><br><span class="line">    start_urls = [<span class="string">&#x27;https://fgo.wiki/w/%E8%8B%B1%E7%81%B5%E5%9B%BE%E9%89%B4&#x27;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">self, response</span>):</span><br><span class="line">        item = ServantPicItem()</span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">        <span class="comment"># 读取本地csv文件</span></span><br><span class="line">        data = pd.read_csv(<span class="string">&quot;link.csv&quot;</span>,usecols=[<span class="string">&quot;图片名称&quot;</span>])</span><br><span class="line">        data_array1 = np.array(data.stack())  <span class="comment"># 首先将pandas读取的数据转化为array</span></span><br><span class="line">        self.name_list = data_array1.tolist()</span><br><span class="line">        data = pd.read_csv(<span class="string">&quot;link.csv&quot;</span>,usecols=[<span class="string">&quot;图片链接&quot;</span>])</span><br><span class="line">        data_array2 = np.array(data.stack())  <span class="comment"># 首先将pandas读取的数据转化为array</span></span><br><span class="line">        self.img_list = data_array2.tolist()  <span class="comment"># 然后转化为list形式</span></span><br><span class="line">        <span class="comment"># item[&#x27;name&#x27;] = self.name_list</span></span><br><span class="line">        item[<span class="string">&#x27;image_urls&#x27;</span>] = self.img_list <span class="comment"># 必须是img_urls,这是图片下载文件中有的</span></span><br><span class="line">        <span class="keyword">yield</span> item</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220606112815.png"></p><h2 id="setting-py文件"><a href="#setting-py文件" class="headerlink" title="setting.py文件"></a>setting.py文件</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">IMAGES_STORE = <span class="string">&#x27;FGO&#x27;</span> <span class="comment"># 没有会自动创建</span></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">   <span class="comment"># &#x27;servant_pic.pipelines.ServantPicPipeline&#x27;: 300,</span></span><br><span class="line">     <span class="string">&#x27;scrapy.pipelines.images.ImagesPipeline&#x27;</span>: <span class="number">300</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>管道文件不需要更改。</p><h2 id="items-py文件"><a href="#items-py文件" class="headerlink" title="items.py文件"></a>items.py文件</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ServantPicItem</span>(scrapy.Item):</span><br><span class="line">    image_urls = scrapy.Field()</span><br></pre></td></tr></table></figure><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>运行后会在本地工程下兴建一个FGO文件夹，子文件夹full，<br>full中为下载图片，命名为以图片URL的SHA1值进行保存的<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220606113516.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;scrapy异步下载图片&quot;&gt;&lt;a href=&quot;#scrapy异步下载图片&quot; class=&quot;headerlink&quot; title=&quot;scrapy异步下载图片&quot;&gt;&lt;/a&gt;scrapy异步下载图片&lt;/h1&gt;&lt;p&gt;通过 from scrapy.pipelines.image</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://example.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="scrapy" scheme="http://example.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三线表</title>
+    <link href="http://example.com/post/4589e453.html"/>
+    <id>http://example.com/post/4589e453.html</id>
+    <published>2022-05-29T11:56:22.000Z</published>
+    <updated>2023-07-18T02:56:31.231Z</updated>
+    
+    <content type="html"><![CDATA[<p>三线表格式设置如下<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094529.png"><br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094601.png"><br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094726.png"><br>换为标题行<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094811.png"><br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094902.png"><br>当出现设置后表格格式还是有问题时，建议检查下图中的标注位置是否框选，尝试框选解决问题<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416095136.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;三线表格式设置如下&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094529.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.git</summary>
+      
+    
+    
+    
+    <category term="办公" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    
+    <category term="word" scheme="http://example.com/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>目录问题</title>
+    <link href="http://example.com/post/b1d2cf7d.html"/>
+    <id>http://example.com/post/b1d2cf7d.html</id>
+    <published>2022-05-29T11:55:06.000Z</published>
+    <updated>2023-07-18T02:56:31.233Z</updated>
+    
+    <content type="html"><![CDATA[<p>当自动插入目录的文字格式怎么改都改不掉时，可能是由于之前使用格式刷刷出的标题，导致格式不统一</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>将开始菜单栏中的标题样式修改并更新，再更新目录便发现字体修改成功<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/image-20220401093614908.png" alt="word修改目录"></p><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/image-20220401093752132.png" alt="word修改目录2"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;当自动插入目录的文字格式怎么改都改不掉时，可能是由于之前使用格式刷刷出的标题，导致格式不统一&lt;/p&gt;
+&lt;h2 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;headerlink&quot; title=&quot;解决办法&quot;&gt;&lt;/a&gt;解决办法&lt;/h2&gt;&lt;p&gt;将开始菜单栏中的</summary>
+      
+    
+    
+    
+    <category term="办公" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    
+    <category term="word" scheme="http://example.com/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题注输入框显示不全</title>
+    <link href="http://example.com/post/d8c3cdf5.html"/>
+    <id>http://example.com/post/d8c3cdf5.html</id>
+    <published>2022-05-29T11:51:37.000Z</published>
+    <updated>2023-07-18T02:56:31.236Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410170251.png"><br>因为对话框的尺寸是限死的，内容的高度超过了对话框的高度就会显示不全。但不会影响内容。</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>可以修改题注的格式（注意之前要插入过题注才有题注的样式），修改为图中或比原来的段落行距小解决问题。<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410170553.png"></p><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410170702.png"></p><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410170738.png"></p><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410170830.png"></p><p>然后更新应用<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220412085140.png"></p><p>再换回原来的行距（例如之前是1.5倍行距）<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410171349.png"><br>再更新一次<br>结果：<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220410171456.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yezhoubing/yzbimghost/main</summary>
+      
+    
+    
+    
+    <category term="办公" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    
+    <category term="word" scheme="http://example.com/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mathtype对行间距影响</title>
+    <link href="http://example.com/post/1d9ea0f4.html"/>
+    <id>http://example.com/post/1d9ea0f4.html</id>
+    <published>2022-04-29T13:36:41.000Z</published>
+    <updated>2023-07-18T02:56:31.221Z</updated>
+    
+    <content type="html"><![CDATA[<p>在写论文时，遇到在word中插入MathType公式后导致行距不一致的问题。</p><h2 id="第1种解决方法"><a href="#第1种解决方法" class="headerlink" title="第1种解决方法"></a>第1种解决方法</h2><p>在几经尝试之后，发现插入word自带的公式并不会导致行距不一问题，就想着将所有的MathType公式都转为word自带的公式进行插入，但重新输入公式太花时间了，因此，找到了一种将MathType公式转换为word自带公式的方法。</p><ol><li>打开MathType公式编辑窗口，菜单栏 —&gt; 剪切和复制选项<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220403163720.png" alt="image"></li></ol><p>选择：MathML 2.0 (namespace attr) —&gt; 确定</p><p>![img]<a href="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220403163810.png">https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220403163810.png</a>)</p><ol start="2"><li>打开目标Word文档 —&gt; 双击MathType公式（使用MathType打开需要转换的公式）— &gt; 在MathTpye对话框中复制需要转换的公式（或者Ctrl+C）</li></ol><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220403163900.png" alt="img"></p><p>在Word文档中用Ctrl+V粘贴 —&gt; Create an OMML equation —&gt; Remember my choice —&gt; OK</p><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220403163944.png" alt="img"></p><p>然后，根据情况进行微调，此时的字体会有变化，需要主义。</p><h2 id="第2种解决方法"><a href="#第2种解决方法" class="headerlink" title="第2种解决方法"></a>第2种解决方法</h2><p>选中该段落<br>打开段落<br>取消 如果定义了文档网络，则对齐到网络该项打勾<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220412095926.png"><br>但不知道会带来什么影响，慎用</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在写论文时，遇到在word中插入MathType公式后导致行距不一致的问题。&lt;/p&gt;
+&lt;h2 id=&quot;第1种解决方法&quot;&gt;&lt;a href=&quot;#第1种解决方法&quot; class=&quot;headerlink&quot; title=&quot;第1种解决方法&quot;&gt;&lt;/a&gt;第1种解决方法&lt;/h2&gt;&lt;p&gt;在几经尝</summary>
+      
+    
+    
+    
+    <category term="办公" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    
+    <category term="mathtype" scheme="http://example.com/tags/mathtype/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三线表</title>
+    <link href="http://example.com/post/4589e453.html"/>
+    <id>http://example.com/post/4589e453.html</id>
+    <published>2022-04-29T13:31:48.000Z</published>
+    <updated>2023-07-18T02:56:31.230Z</updated>
+    
+    <content type="html"><![CDATA[<p>三线表格式设置如下<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094529.png"><br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094601.png"><br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094726.png"><br>换为标题行<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094811.png"><br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094902.png"><br>当出现设置后表格格式还是有问题时，建议检查下图中的标注位置是否框选，尝试框选解决问题<br><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416095136.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;三线表格式设置如下&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/20220416094529.png&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.git</summary>
+      
+    
+    
+    
+    <category term="办公" scheme="http://example.com/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    
+    <category term="word" scheme="http://example.com/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html和css规范</title>
+    <link href="http://example.com/post/ac3f3103.html"/>
+    <id>http://example.com/post/ac3f3103.html</id>
+    <published>2022-03-27T12:41:41.000Z</published>
+    <updated>2023-07-18T03:07:56.037Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="html与css的一些规范问题"><a href="#html与css的一些规范问题" class="headerlink" title="html与css的一些规范问题"></a>html与css的一些规范问题</h1><h2 id="1-命名问题"><a href="#1-命名问题" class="headerlink" title="1.命名问题"></a>1.命名问题</h2><p>不要用字母大小写，即驼峰命名法；尽量使用小写字母与数字，用下划线连接</p><h2 id="2-url结构"><a href="#2-url结构" class="headerlink" title="2.url结构"></a>2.url结构</h2><p>协议+主机+端口 +路径+资源</p><p>eg:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://lbs.tianditu.gov.cn/server/MapService.html</span><br></pre></td></tr></table></figure><h2 id="3-协议"><a href="#3-协议" class="headerlink" title="3.协议"></a>3.协议</h2><p>比如</p><table><thead><tr><th>http:&#x2F;&#x2F;</th><th></th></tr></thead><tbody><tr><td>https:&#x2F;&#x2F;</td><td>具有保密协议，比上一个安全</td></tr><tr><td>ftp:&#x2F;&#x2F;</td><td>通常用于文件上传或下载</td></tr></tbody></table><h2 id="4-注释"><a href="#4-注释" class="headerlink" title="4.注释"></a>4.注释</h2><p>给一个块添加注释</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--这是开始 START--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;map&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--这是结束 END--&gt;</span></span><br></pre></td></tr></table></figure><h2 id="5-块"><a href="#5-块" class="headerlink" title="5.块"></a>5.块</h2><p>meta对于搜索引擎</p><p>第一条是搜索引擎如果搜索你content中的关键词，你的网页会有机会出现在搜索结果上；第二条是搜索结果标题下的描述</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;关键词1、关键词2&quot;</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;关键词1、关键词2&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;html与css的一些规范问题&quot;&gt;&lt;a href=&quot;#html与css的一些规范问题&quot; class=&quot;headerlink&quot; title=&quot;html与css的一些规范问题&quot;&gt;&lt;/a&gt;html与css的一些规范问题&lt;/h1&gt;&lt;h2 id=&quot;1-命名问题&quot;&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="html" scheme="http://example.com/tags/html/"/>
+    
+    <category term="css" scheme="http://example.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>keras</title>
+    <link href="http://example.com/post/c6a7702e.html"/>
+    <id>http://example.com/post/c6a7702e.html</id>
+    <published>2022-02-04T03:24:08.000Z</published>
+    <updated>2023-07-18T02:56:31.216Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Keras"><a href="#Keras" class="headerlink" title="Keras"></a>Keras</h1><h2 id="1-model"><a href="#1-model" class="headerlink" title="1. model"></a>1. model</h2><h3 id="sequential"><a href="#sequential" class="headerlink" title="sequential"></a>sequential</h3><p>按顺序建立的神经网络，一层加一层</p><h2 id="2-layer"><a href="#2-layer" class="headerlink" title="2.layer"></a>2.layer</h2><h3 id="dense"><a href="#dense" class="headerlink" title="dense"></a>dense</h3><p>全连接层</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 作为 Sequential 模型的第一层，需要指定输入维度。可以为 input_shape=(16,) 或者 input_dim=16，这两者是等价的。</span></span><br><span class="line">model = Sequential()</span><br><span class="line">model.add(Dense(<span class="number">32</span>, input_shape=(<span class="number">16</span>,)))</span><br><span class="line"><span class="comment"># 现在模型就会以尺寸为 (*, 16) 的数组作为输入，</span></span><br><span class="line"><span class="comment"># 其输出数组的尺寸为 (*, 32)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在第一层之后，就不再需要指定输入的尺寸了,第二层输入的数据是第一层输出的数据，所以只要指定输出即可：</span></span><br><span class="line">model.add(Dense(<span class="number">32</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="3-tanh"><a href="#3-tanh" class="headerlink" title="3.tanh"></a>3.tanh</h2><p>压缩到-1到1之间</p><p><img src="https://raw.githubusercontent.com/yezhoubing/yzbimghost/main/img/image-20220204112819050.png" alt="image-20220204112819050"></p><p><img src="https://s2.loli.net/2022/02/04/brjmhyHSlNWUJx2.png" alt="image-20220204112859503"></p><p>LSTM 滑动窗口windowssize</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Keras&quot;&gt;&lt;a href=&quot;#Keras&quot; class=&quot;headerlink&quot; title=&quot;Keras&quot;&gt;&lt;/a&gt;Keras&lt;/h1&gt;&lt;h2 id=&quot;1-model&quot;&gt;&lt;a href=&quot;#1-model&quot; class=&quot;headerlink&quot; title=</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="机器学习、lstm" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81lstm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://example.com/post/d87f7e0c.html"/>
+    <id>http://example.com/post/d87f7e0c.html</id>
+    <published>2022-02-03T13:55:43.000Z</published>
+    <updated>2023-07-18T02:56:31.228Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><h2 id="测试-1"><a href="#测试-1" class="headerlink" title="测试"></a>测试</h2><p>测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;h2 id=&quot;测试-1&quot;&gt;&lt;a href=&quot;#测试-1&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h2&gt;&lt;p</summary>
+      
+    
+    
+    
+    <category term="练习" scheme="http://example.com/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://example.com/post/d87f7e0c.html"/>
+    <id>http://example.com/post/d87f7e0c.html</id>
+    <published>2022-02-03T13:42:35.000Z</published>
+    <updated>2023-07-18T02:56:31.229Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><h2 id="测试-1"><a href="#测试-1" class="headerlink" title="测试"></a>测试</h2><p>测试</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;h2 id=&quot;测试-1&quot;&gt;&lt;a href=&quot;#测试-1&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h2&gt;&lt;p</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
