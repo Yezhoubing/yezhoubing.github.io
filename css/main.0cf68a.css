@@ -664,8 +664,8 @@ i {
 .icon-psn:before {
 	content:"\E6C7"
 }
-body,button,input,select,textarea {
-	color:#1a1a1a;
+body,button,input,select,textarea { /* 这里修改每篇文章的字 */
+	color:#000; /* 文章字体颜色 */
 	font-family:lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 	font-size:16px;
 	font-size:1rem;
@@ -701,7 +701,9 @@ body {
 	position:absolute;
 	right:0;
 	min-height:100%;
-	/*background:#eaeaea;*/
+	background:url("https://s2.loli.net/2022/12/03/LD5hVtQHiRmu32l.jpg"); /* 整个背景颜色,这里用图片 */
+	background-repeat:no-repeat; 
+	background-size:cover;
 	left:300px;
 	width:auto
 }
@@ -710,10 +712,10 @@ body {
 	opacity:.9
 }
 .mid-col.show .article {
-	background:hsla(0,0%,100%,.3)
+	background:hsla(0, 3%, 7%, 0.3)
 }
 .left-col {
-	background:#fff;
+	background:#000; /* 左侧栏背景颜色 */
 	width:300px;
 	position:fixed;
 	opacity:1;
@@ -738,10 +740,10 @@ body {
 	border-bottom:1px solid color-border
 }
 .left-col #header a {
-	color:#696969
+	color:#fff  /* 左侧栏字体颜色 */
 }
 .left-col #header a:hover {
-	color:#b0a0aa
+	color:#fa2500  /* 左侧栏字体悬浮颜色 */
 }
 .left-col #header .header-subtitle {
 	text-align:center;
@@ -1798,15 +1800,16 @@ to {
 	-webkit-transform:scale(1);
 	transform:scale(1)
 }
-}.article {
+}.article { /*这里改的是每篇博客*/
 	margin:30px;
 	position:relative;
 	border:1px solid #ddd;
 	border-top:1px solid #fff;
 	border-bottom:1px solid #fff;
-	background:#fff;
+	background:#fff; /*将每篇文章背景修改为白色*/
 	transition:all .2s ease-in;
 	word-break: break-all;
+	opacity: 0.6; /*将每篇文章的透明度修改为0.5*/
 }
 .article img {
 	max-width:99%
