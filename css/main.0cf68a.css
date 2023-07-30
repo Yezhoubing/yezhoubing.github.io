@@ -704,6 +704,7 @@ body {
 	background:url("https://s2.loli.net/2022/12/03/LD5hVtQHiRmu32l.jpg"); /* 整个背景颜色,这里用图片 */
 	background-repeat:no-repeat; 
 	background-size:cover;
+	background-attachment:fixed;  /* 设置背景不随内容滚动而滚动 */
 	left:300px;
 	width:auto
 }
@@ -3691,8 +3692,8 @@ to {
 	body {
 	background: linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
 	}
-	.mid-col {
-    background: linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);
+	.mid-col { 
+    background: linear-gradient(55deg,#88ACDB,#49B1F5,#9534f1,#49b1f5);  /* todo：这里修改手机背景，这个位置是主页背景（为什么一个偏蓝，一个偏紫） */
 	}
 	.toc-container.tooltip-left .tooltip-east .tooltip-content {
     max-width: 300px;
