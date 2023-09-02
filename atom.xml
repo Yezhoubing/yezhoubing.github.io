@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-09-02T01:45:14.702Z</updated>
+  <updated>2023-09-02T01:51:00.013Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,12 @@
     <link href="http://example.com/post/99902388.html"/>
     <id>http://example.com/post/99902388.html</id>
     <published>2023-09-02T01:37:16.000Z</published>
-    <updated>2023-09-02T01:45:14.702Z</updated>
+    <updated>2023-09-02T01:51:00.013Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="compare-main-to-master问题"><a href="#compare-main-to-master问题" class="headerlink" title="compare main to master问题"></a>compare main to master问题</h1><p>当我将我博客上的内容从本地上传到github上的时候，出现了这样的问题：上传到了main分支，而不是master分支。这是因为github默认的分支已经从master变成了main，所以我们需要将上传的时候将main分支改成master分支。<br><img src="https://s2.loli.net/2023/09/02/aukDEqZ2xGSCPz3.png"></p><p>如果是仓库的话同理，注意一下你传的分支是不是默认分支。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="compare-main-to-master问题"><a href="#compare-main-to-master问题" class="headerlink" title="compare main to master问题"></a>compare main to master问题</h1><p>当我将我博客上的内容从本地上传到github上的时候，出现了这样的问题：上传到了main分支，而不是master分支。这是因为github默认的分支已经从master变成了main，所以我们需要将上传的时候将main分支改成master分支。</p><span id="more"></span><p><img src="https://s2.loli.net/2023/09/02/aukDEqZ2xGSCPz3.png"></p><p>如果是仓库的话同理，注意一下你传的分支是不是默认分支。</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;compare-main-to-master问题&quot;&gt;&lt;a href=&quot;#compare-main-to-master问题&quot; class=&quot;headerlink&quot; title=&quot;compare main to master问题&quot;&gt;&lt;/a&gt;compare main t</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;compare-main-to-master问题&quot;&gt;&lt;a href=&quot;#compare-main-to-master问题&quot; class=&quot;headerlink&quot; title=&quot;compare main to master问题&quot;&gt;&lt;/a&gt;compare main to master问题&lt;/h1&gt;&lt;p&gt;当我将我博客上的内容从本地上传到github上的时候，出现了这样的问题：上传到了main分支，而不是master分支。这是因为github默认的分支已经从master变成了main，所以我们需要将上传的时候将main分支改成master分支。&lt;/p&gt;</summary>
     
     
     
