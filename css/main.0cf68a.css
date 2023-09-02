@@ -1810,7 +1810,7 @@ to {
 	background:#fff; /*将每篇文章背景修改为白色*/
 	transition:all .2s ease-in;
 	word-break: break-all;
-	opacity: 0.6; /*将每篇文章的透明度修改为0.5*/
+	opacity: 0.8; /*将每篇文章的透明度修改为0.8，太低会导致图片、字体都看不清*/
 }
 .article img {
 	max-width:99%
