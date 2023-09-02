@@ -303,6 +303,149 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-scrapy模拟登录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/87f5bed2.html">scrapy模拟登录</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/87f5bed2.html" class="archive-article-date">
+  	<time datetime="2022-06-15T02:13:58.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2022-06-15</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	
+    <!-- waline阅读量统计 -->
+	
+
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+      
+    
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">219字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LoginSpider</span>(scrapy.Spider):</span><br><span class="line">    name = <span class="string">&#x27;login&#x27;</span></span><br><span class="line">    start_urls = [<span class="string">&#x27;https://github.com/login&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">self, response</span>):</span><br><span class="line">        ever_token = response.xpath(<span class="string">&#x27;//*[@id=&quot;login&quot;]/div[4]/form/input[1]/@value&#x27;</span>).extract_first()</span><br><span class="line">        timestamp_secret = response.xpath(<span class="string">&#x27;//*[@id=&quot;login&quot;]/div[4]/form/div/input[11]/@value&#x27;</span>).extract_first()</span><br><span class="line">        timestamp = response.xpath(<span class="string">&#x27;//*[@id=&quot;login&quot;]/div[4]/form/div/input[10]/@value&#x27;</span>).extract_first()</span><br><span class="line"></span><br><span class="line">        data = &#123;</span><br><span class="line">            <span class="string">&quot;commit&quot;</span>: <span class="string">&quot;Sign in&quot;</span>,</span><br><span class="line">            <span class="string">&quot;authenticity_token&quot;</span>: ever_token, <span class="comment"># token每次都会变,可以在login网页中查找到</span></span><br><span class="line">            <span class="string">&quot;login&quot;</span>: <span class="string">&quot;xxx&quot;</span>, <span class="comment"># 填成自己的</span></span><br><span class="line">            <span class="string">&quot;password&quot;</span>: <span class="string">&quot;xxx&quot;</span>, <span class="comment"># 填成自己的</span></span><br><span class="line">            <span class="string">&quot;webauthn-support&quot;</span>: <span class="string">&quot;supported&quot;</span>,</span><br><span class="line">            <span class="string">&quot;webauthn-iuvpaa-support&quot;</span>: <span class="string">&quot;unsupported&quot;</span>,</span><br><span class="line">            <span class="string">&quot;return_to&quot;</span>: <span class="string">&quot;https://github.com/login&quot;</span>,</span><br><span class="line">            <span class="string">&quot;timestamp&quot;</span>: timestamp,</span><br><span class="line">            <span class="string">&quot;timestamp_secret&quot;</span>: timestamp_secret</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">yield</span> scrapy.FormRequest(  <span class="comment"># 用的就是post方式</span></span><br><span class="line">            url=<span class="string">&#x27;https://github.com/session&#x27;</span>, <span class="comment"># post网址</span></span><br><span class="line">            callback=self.after_login,</span><br><span class="line">            formdata=data</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">after_login</span>(<span class="params">self, response</span>):</span><br><span class="line">        <span class="keyword">yield</span> scrapy.Request(<span class="string">&#x27;https://github.com/yezhoubing&#x27;</span>, callback=self.check_login)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">check_login</span>(<span class="params">self, response</span>):</span><br><span class="line">        <span class="built_in">print</span>(response.xpath(<span class="string">&#x27;html/head/title/text()&#x27;</span>).extract_first())</span><br></pre></td></tr></table></figure>
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">scrapy</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/87f5bed2.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+  
     <article id="post-scrapy使用selenium" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1657,7 +1800,7 @@ window.MathJax = {
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 19 篇</span>
+		<span> 20 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 		<span> <span class="post-count">7.6k</span></span>
